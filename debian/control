@@ -1,0 +1,16 @@
+Source: vyatta-hotplug
+Section: contrib/net
+Priority: extra
+Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
+Build-Depends: debhelper (>= 9),
+Standards-Version: 3.9.8
+
+Package: vyatta-hotplug
+Architecture: all
+Depends: ${misc:Depends},
+	 vyatta-dataplane,
+	 libvyatta-dataplane-perl | vplane-config,
+	 libconfig-tiny-perl,
+Description: vyatta dataplane hotplug
+ This package has scripts supporting Vyatta dataplane hotplug
+ feature.

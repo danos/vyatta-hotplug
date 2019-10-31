@@ -1,0 +1,3 @@
+#!/bin/sh
+
+udevadm trigger -c add -s net -p ID_BUS=usb

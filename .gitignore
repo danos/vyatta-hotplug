@@ -1,0 +1,5 @@
+/debian/debhelper-build-stamp
+/debian/files
+/debian/vyatta-hotplug.debhelper.log
+/debian/vyatta-hotplug.substvars
+/debian/vyatta-hotplug

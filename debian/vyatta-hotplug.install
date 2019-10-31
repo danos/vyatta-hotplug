@@ -1,0 +1,3 @@
+udev/20-vyatta-net-dataplane.rules lib/udev/rules.d
+scripts/vyatta-hotplug.pl opt/vyatta/sbin
+scripts/vyatta-udev.sh opt/vyatta/sbin

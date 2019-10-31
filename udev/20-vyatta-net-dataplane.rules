@@ -1,0 +1,5 @@
+ACTION=="add", SUBSYSTEM=="net", DEVPATH=="/devices/pci*", RUN+="/opt/vyatta/sbin/vyatta-udev.sh $env{ID_MODEL_FROM_DATABASE}"
+ACTION=="remove", SUBSYSTEM=="pci",DEVPATH=="/devices/pci*", RUN+="/opt/vyatta/sbin/vyatta-udev.sh"
+
+# Rule to match uio device add for vmware/vmxnet3 nic
+ACTION=="add", SUBSYSTEM=="uio", ATTRS{vendor}=="0x15ad", ATTRS{device}=="0x07b0", DEVPATH=="/devices/pci*", RUN+="/opt/vyatta/sbin/vyatta-udev.sh $attr{name}"
